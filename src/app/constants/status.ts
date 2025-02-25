@@ -1,10 +1,8 @@
-const statusCode: { [key: string]: string } = {
-    //Users //Faq //Inventory
-    ACTIVE: 'bg-accent text-accent-foreground',
-    INVITED: 'bg-secondary text-secondary-foreground',
-    REVOKED: 'bg-secondary text-secondary-foreground',
-  };
-  
+import  {FaRegSmileBeam} from 'react-icons/fa'
+import {PiSmileyMeh ,PiSmileySadLight} from 'react-icons/pi'
+
+
+
   export const getStatusColorCode = (id: string) => {
     switch (id) {
       case 'Positive':
@@ -12,6 +10,7 @@ const statusCode: { [key: string]: string } = {
           background: 'bg-[#dbf7e2]',
           text: 'text-[#14bf3d]',
           border: 'border-[#14bf3d]',
+          icon:FaRegSmileBeam,
         };
   
       case 'Negative':
@@ -19,6 +18,7 @@ const statusCode: { [key: string]: string } = {
             background: 'bg-[#eea08f]',
             text: 'text-[#ee3209]',
             border: 'border-[#ee3209]',
+            icon:PiSmileySadLight,
         };
   
       case 'Neutral':
@@ -26,6 +26,7 @@ const statusCode: { [key: string]: string } = {
           background: 'bg-[#bdcdcd]',
           text: 'text-[#839292]',
           border: 'border-[#839292]',
+          icon:PiSmileyMeh,
         };
 
 

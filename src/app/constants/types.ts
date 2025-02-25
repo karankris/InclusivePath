@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
+
 export type Tabs = {
     id:number,
     title:string,
-    component:React.ReactNode;
 }
 
 export type Question = {
@@ -9,5 +10,12 @@ export type Question = {
  options:string[],
  answer:string[],
  response:string[],
+ feedback:string[];
 }
 
+export type StatusItem = (id: string) => {
+    background: string;
+    text: string;
+    border: string;
+    icon: ReactNode; // Ensure ReactNode is used instead of a component type
+  };
