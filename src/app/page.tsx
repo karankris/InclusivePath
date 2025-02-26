@@ -26,7 +26,7 @@ const Diversity = () => {
   return (
     <div className="flex flex-col w-auto h-full mt-10">
       <h1 className="text-2xl text-center flex justify-center mb-10 font-bold font-mono">
-        Diversity, equity, and inclusion
+      {`Diversity, equity, and inclusion - (DEI) Survey`}
       </h1>
       <div className="mt-10 flex cursor-pointer ms-4">
         {tabs.map((t, index) => (
