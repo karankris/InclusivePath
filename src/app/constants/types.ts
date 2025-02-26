@@ -5,6 +5,12 @@ export type Tabs = {
     title:string,
 }
 
+export type TabAI = {
+    id:number,
+    title:string,
+    component:ReactNode
+}
+
 export type Question = {
  question:string,
  options:string[],
