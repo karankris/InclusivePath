@@ -1,9 +1,6 @@
 'use client'
 
 const GenerativeAi = () => {
-    const _handleOpenAi = () => {
-        <a href="https://claude.ai/"></a>
-    }
     return (
         <div className="flex flex-col justify-center items-center text-center w-full">
             <h1 className="mb-5 text-2xl font-semibold">Generative AI</h1>
